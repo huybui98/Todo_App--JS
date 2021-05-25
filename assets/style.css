@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	box-sizing: border-box;
+	font-family: 'Itim', cursive;
+	background-color: #e5e7eb;
+}
+
+body {
+	width: 70%;
+	margin: 100px auto 0;
+}
+
+input {
+	padding: 8px;
+	border-radius: 4px;
+	border: 2px solid #6b7280;
+	outline-color: #34d399;
+}
+
+input:hover {
+	border-color: #34d399;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+.header__title {
+	font-size: 50px;
+	margin-right: 100px;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.group__todo {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 20px;
+}
+#form label {
+	font-weight: bold;
+	display: block;
+	font-size: 30px;
+	padding-bottom: 15px;
+}
+#form input {
+	margin-right: 30px;
+}
+
+.btn {
+	cursor: pointer;
+	outline: none;
+	border-radius: 4px;
+	margin-right: 20px;
+	padding: 0 10px;
+	height: 35px;
+	border: none;
+}
+
+.add {
+	background-color: #34d399;
+}
+.save {
+	background-color: #60a5fa;
+}
+.delete {
+	background-color: #ef4444;
+}
+
+.list__todo > h2 {
+	font-size: 30px;
+}
+.list {
+	list-style: none;
+}
+.list > li {
+	padding: 15px;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.list > li > span {
+	flex: 1;
+	font-size: 25px;
+}
+.list > li > span.completed {
+	color: #9ca3af;
+	font-style: italic;
+	text-decoration: line-through;
+}
+.list > li:not(:last-child) {
+	border-bottom: 1px solid #d1d5db;
+}
+
+.icon-remove {
+	color: #ef4444;
+}
+
+/* .complete {
+	color: #9ca3af;
+	font-style: italic;
+	text-decoration: line-through;
+} */
